@@ -1,0 +1,11 @@
+#!/bin/bash
+SHADER_DIR='/home/lee/Files/work/allshaders/reshade-shaders-working/Shaders/'
+for FILE in $SHADER_DIR*.fx
+do
+	FILENAME=`basename $FILE`
+	echo $FILENAME
+	echo -n $FILENAME"," >> results.txt
+	sed  -i "/test=/c\test=$SHADER_DIR$FILENAME" vkBasalt.conf
+	VKBASALT_LOG_LEVEL=debug VKBASALT_LOG_FILE="$PWD/logs/$FILENAME.vkBasalt.log"  ENABLE_VKBASALT=1 vkmark -p immediate -b :duration=1 |grep 'vkmark Score' | awk '{$1=$1};1' >>results.txt
+done
+
