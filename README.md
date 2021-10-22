@@ -234,5 +234,5 @@ See notes below
 
 ### Notes
 Where it is multiple techniques preventing a shader from working it may be possible to delete uneeded techniques, create seperate versions of the shaders with diferent names etc.  
-I couldn't find a instance where `depthCapture = on` made a shader work when a didn't with `depthCapture = off`.  
+I couldn't find an instance where `depthCapture = on` made a shader work when a didn't with `depthCapture = off`.  
 I did mean to turn off vkBasalts logging but forgot until to late,debug logging on in all test shown, so there you have it.  
