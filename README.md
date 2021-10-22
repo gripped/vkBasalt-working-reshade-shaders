@@ -1,6 +1,6 @@
 # List of Reshade shaders working with vkBasalt
 
-I started by wanting to know which reshader shaders work with vkbasalt.  
+I started by wanting to know which Reshade shaders work with vkbasalt.  
 Let me define 'work'. If vkmark completed and the screen was not black they are classed as working.  
 I tested all the shaders, which can be installed with the reshade application (bar the 'legacy' ones), both with `depthCapture = off` and `depthCapture = on`  
 As I wanted them all in one folder I had to rename custom ReShade.fxh's and edit the shaders concerned in a few cases.  
