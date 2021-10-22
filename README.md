@@ -10,7 +10,7 @@ vkmark was used to test the shaders.
 All shaders were tested using the default settings within each shader.  
 The performance figures were just something I thought I might as well note whilst doing this.  
 While they may give an indication as to which shaders have more of a hit than others in the real world you probably won't see performance drops like below. For example I use vkBasalt with 6 shaders (LiftGammaGain.fx,Vibrance.fx,Tonemap.fx,Vignette.fx,Curves.fx & LumaSharpen.fx),with RDR2, and see hardly any performance hit at all. About 1-2%.  
-The main point to this is just the list of working shaders. I accept my methodology probably sucks :)  
+The main point to this is just the list of working shaders. I accept my methodology probably sucks :)   
 
 ## Easily fixable shaders  
 
