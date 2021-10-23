@@ -65,6 +65,14 @@ See notes below
 |UIMask.fx|Blackscreen| Possibly just needs Textures/UIMask.png (not provided) |
 |VRS_Map.fx|Crash vkmark| error X3004: undeclared identifier or no matching intrinsic overload for 'tex2Dfetch'|
 
+## You might be lucky
+|Shader|Score Depth off|Perf. Hit %|Score Depth on|Perf. Hit %|
+|:-----|:--------------|:---------|:-------------|:---------|
+|DisplayDepth.fx|7964|21.29%|7801|22.90%|
+
+DisplayDepth.fx was fine in vkmark but not in some of the other demos I've tried
+
+
 ## Shaders that do work, vkmark scores and percentage hit on the score  
 (vkmark scored an average of 10118 run without vkBasalt)  
 
@@ -110,7 +118,6 @@ See notes below
 |Depth_Tool.fx|5154|49.06%|5013|50.45%|
 |Dimension_Plus.fx|6931|31.50%|6710|33.68%|
 |DirectionalDepthBlur.fx|3636|64.06%|3638|64.04%|
-|DisplayDepth.fx|7964|21.29%|7801|22.90%|
 |Dither.fx|7681|24.09%|7684|24.06%|
 |DLAA_Plus.fx|3325|67.14%|3329|67.10%|
 |DPX.fx|7912|21.80%|7915|21.77%|
